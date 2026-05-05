@@ -10,7 +10,6 @@ repo_url: https://github.com/ShoppingLiao/stock-analysis-public
 theme:
   name: material
   language: zh-TW
-  custom_dir: overrides
   font:
     text: Noto Sans TC
     code: Fira Code
