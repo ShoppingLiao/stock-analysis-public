@@ -16,10 +16,6 @@
 
 **僅供研究參考,不構成投資建議**。詳見 [線上免責聲明](https://shoppingliao.github.io/stock-analysis-public/disclaimer/)。
 
-## 🔗 相關專案
-
-完整功能(個人持股追蹤、即時掃描、策略追蹤)在 [stock-tracker](https://github.com/ShoppingLiao/stock-tracker) 私人專案內。
-
 ## 📦 技術棧
 
 - [MkDocs](https://www.mkdocs.org/) + [Material theme](https://squidfunk.github.io/mkdocs-material/)
