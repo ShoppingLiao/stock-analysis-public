@@ -1,0 +1,24 @@
+# 台股 DDMD 分析 robots.txt
+# 首頁與框架說明開放索引,個股報告不索引(避免被當投資建議引用)
+
+User-agent: *
+Allow: /
+Disallow: /reports/
+
+# 大型 AI 訓練爬蟲不允許(內容版權所有)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+Sitemap: https://shoppingliao.github.io/stock-analysis-public/sitemap.xml

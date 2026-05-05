@@ -57,3 +57,9 @@
 
 [👉 從個股分析開始](reports/index.md){ .md-button .md-button--primary }
 [📖 了解 DDMD 框架](about/ddmd.md){ .md-button }
+
+---
+
+## 📡 想被通知有新分析?
+
+訂閱 [RSS feed](feed_rss_created.xml){ target="_blank" } — 用 [Feedly](https://feedly.com)、[Inoreader](https://www.inoreader.com) 等 RSS 閱讀器追蹤,新個股分析會自動推送。

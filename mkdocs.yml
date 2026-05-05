@@ -92,12 +92,28 @@ plugins:
       lang:
         - zh
         - en
+  # RSS feed:朋友可訂閱新增的分析(/feed_rss_created.xml)
+  - rss:
+      match_path: "reports/.*"
+      date_from_meta:
+        as_creation: "sync_date"
+        as_update: "sync_date"
+        datetime_format: "%Y-%m-%d"
+      categories:
+        - symbol
+      pretty_print: true
+      length: 30
+      feed_ttl: 1440  # 24h
+      image: https://shoppingliao.github.io/stock-analysis-public/assets/favicon.png
 
 # Footer
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ShoppingLiao
+    - icon: fontawesome/solid/rss
+      link: /stock-analysis-public/feed_rss_created.xml
+      name: RSS feed(新分析自動通知)
   generator: false  # 移除 "Made with Material"
 
 extra_css:
