@@ -25,8 +25,6 @@
 
 抱歉,即時候選**只在私人系統內推送**(透過 Telegram)。
 
-如果你想用同一個策略,可以 fork [stock-tracker 專案](https://github.com/ShoppingLiao/stock-tracker)(目前 private,等開源)自己跑。
-
 ---
 
 [👈 看 DDMD 個股分析](reports/index.md){ .md-button .md-button--primary }
