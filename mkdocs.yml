@@ -1,5 +1,5 @@
-site_name: 台股 DDMD 分析
-site_description: 用「大大毛多」框架深度分析台股,結合動態出場策略與回測驗證
+site_name: Shopping 的股窩
+site_description: 台股投資研究筆記 — DDMD 個股深度分析 + 黑飛舞短線策略(回測勝率 33% / 期望值 +1.31%/筆)
 site_author: ShoppingLiao
 site_url: https://shoppingliao.github.io/stock-analysis-public/
 
@@ -52,15 +52,15 @@ theme:
 
 # 內容
 nav:
-  - 首頁: index.md
-  - DDMD 個股分析:
-    - reports/index.md
-    - 黑飛舞掃描: signals.md
-  - 框架說明:
-    - 什麼是 DDMD: about/ddmd.md
-    - 黑飛舞策略: about/strategy.md
+  - 🏠 首頁: index.md
+  - 📊 DDMD 個股分析:
+    - 個股清單(評分排名): reports/index.md
+    - 框架說明: about/ddmd.md
     - 評分標準: about/scoring.md
-  - 免責聲明: disclaimer.md
+  - 📡 黑飛舞短線策略:
+    - 策略說明 + 回測: about/strategy.md
+    - 即時掃描候選: signals.md
+  - ⚠️ 免責聲明: disclaimer.md
 
 # Markdown 擴充
 markdown_extensions:
