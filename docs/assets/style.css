@@ -1,0 +1,41 @@
+/* Custom styles for 台股 DDMD 分析 */
+
+/* 中文字體優化 */
+.md-typeset {
+  line-height: 1.7;
+}
+
+/* 表格更緊湊 */
+.md-typeset table:not([class]) {
+  font-size: 0.85em;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color--light);
+  color: white;
+  font-weight: 600;
+}
+
+/* emoji 大一點點 */
+.md-typeset .twemoji {
+  height: 1.1em;
+  width: 1.1em;
+}
+
+/* 評分總分強調 */
+.md-typeset strong em {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* admonition 警告類型加強 */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: #f44336;
+}
+
+/* button 群組間距 */
+.md-typeset .md-button + .md-button {
+  margin-left: 0.5em;
+}
