@@ -39,4 +39,4 @@
 ## 🤔 沒看到你想看的個股?
 
 - 這份分析清單是隨機累積,**不是「對全市場進行系統性掃描」**
-- 想看哪檔可以到 [GitHub Issues](https://github.com/ShoppingLiao/stock-analysis-public/issues) 提案
+- 想看哪檔可以找原作者提案(如果你認識的話 😉)
