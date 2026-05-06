@@ -59,6 +59,8 @@ nav:
     - 評分標準: about/scoring.md
   - 📡 黑飛舞短線策略:
     - 策略說明 + 回測: about/strategy.md
+    - 🔬 v2 實驗(簡化出場 + 加碼): about/strategy_v2.md
+    - 📊 v1 vs v2 戰績比較: about/strategy_compare.md
     - 即時掃描候選: signals.md
   - ⚠️ 免責聲明: disclaimer.md
 
