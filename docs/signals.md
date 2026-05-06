@@ -14,7 +14,6 @@
 | 日期 | 代號 | 公司 | 訊號 | DDMD 分析 |
 |------|------|------|------|----------|
 | 2026-05-06 | **6147** | 頎邦 | 🎯 黑飛舞觸發 | [11/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/6147_%E9%A0%8E%E9%82%A6_DDMD_2026-05-06/) |
-| 2026-05-06 | **3711** | 日月光投控 | 🎯 黑飛舞觸發 | [18/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/3711_%E6%97%A5%E6%9C%88%E5%85%89%E6%8A%95%E6%8E%A7_DDMD_2026-05-05/) |
 | 2026-05-05 | **2049** | 上銀 | 🎯 黑飛舞觸發 | — |
 | 2026-05-05 | **3665** | 貿聯-KY | 🎯 黑飛舞觸發 | [18/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/3665_%E8%B2%BF%E8%81%AF_DDMD_2026-05-06/) |
 
