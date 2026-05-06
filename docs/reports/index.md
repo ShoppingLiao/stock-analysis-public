@@ -1,6 +1,7 @@
 <style>
 .md-typeset table:not([class]) th,
 .md-typeset table:not([class]) td { white-space: nowrap; }
+.md-typeset table:not([class]) th { min-width: 4rem; }
 </style>
 
 # 📁 個股 DDMD 分析清單
