@@ -66,7 +66,10 @@ nav:
     - 🔬 v2 失敗實驗(簡化出場 + 加碼): about/strategy_v2.md
     - 📊 各版戰績比較: about/strategy_compare.md
   - 🔥 紅爆中長線策略:
-    - 策略說明 + 回測: about/strategy_red_burst.md
+    - 🎯 現役版(V1 + dedupe): about/strategy_red_burst.md
+    - 📜 V0 — D5 進場(原版): about/strategy_red_burst_v0.md
+    - 🚀 V1 — D1 直接進場: about/strategy_red_burst_v1.md
+    - 🎯 Dedupe — 同檔不重複: about/strategy_red_burst_dedupe.md
   - ⚠️ 免責聲明: disclaimer.md
 
 # Markdown 擴充
