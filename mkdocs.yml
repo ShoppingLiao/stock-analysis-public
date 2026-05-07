@@ -63,6 +63,8 @@ nav:
     - 🔬 v2 失敗實驗(簡化出場 + 加碼): about/strategy_v2.md
     - 📊 各版戰績比較: about/strategy_compare.md
     - 即時掃描候選: signals.md
+  - 🔥 紅爆中長線策略:
+    - 策略說明 + 回測: about/strategy_red_burst.md
   - ⚠️ 免責聲明: disclaimer.md
 
 # Markdown 擴充
