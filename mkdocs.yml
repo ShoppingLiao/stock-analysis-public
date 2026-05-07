@@ -53,6 +53,9 @@ theme:
 # 內容
 nav:
   - 🏠 首頁: index.md
+  - 📡 即時掃描候選:
+    - 🦋 黑飛舞訊號: signals_black_butterfly.md
+    - 🔥 紅爆訊號: signals_red_burst.md
   - 📊 DDMD 個股分析:
     - 個股清單(評分排名): reports/index.md
     - 框架說明: about/ddmd.md
@@ -62,7 +65,6 @@ nav:
     - 🎯 v3 TDMD 快評 + 倉位連動 (現行): about/strategy_v3.md
     - 🔬 v2 失敗實驗(簡化出場 + 加碼): about/strategy_v2.md
     - 📊 各版戰績比較: about/strategy_compare.md
-    - 即時掃描候選: signals.md
   - 🔥 紅爆中長線策略:
     - 策略說明 + 回測: about/strategy_red_burst.md
   - ⚠️ 免責聲明: disclaimer.md
