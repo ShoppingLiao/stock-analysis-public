@@ -56,6 +56,7 @@ nav:
   - 📡 即時掃描候選:
     - 🦋 黑飛舞訊號: signals_black_butterfly.md
     - 🔥 紅爆訊號: signals_red_burst.md
+  - 📡 大盤避雷針: bubble_monitor.md
   - 📊 DDMD 個股分析:
     - 個股清單(評分排名): reports/index.md
     - 框架說明: about/ddmd.md
