@@ -54,6 +54,7 @@ theme:
 nav:
   - 🏠 首頁: index.md
   - 📡 即時掃描候選:
+    - 📊 資金模擬: signals_capital.md
     - 🦋 黑飛舞訊號: signals_black_butterfly.md
     - 🔥 紅爆訊號: signals_red_burst.md
   - 📡 大盤避雷針:
