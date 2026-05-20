@@ -58,7 +58,6 @@ nav:
     - 🔥 紅爆訊號: signals_red_burst.md
   - 📡 大盤避雷針:
     - 📊 當前狀態: bubble_monitor/index.md
-    - 📈 走勢圖: bubble_monitor/charts.md
     - 📐 警戒門檻說明: bubble_monitor/thresholds.md
   - 📊 DDMD 個股分析:
     - 個股清單(評分排名): reports/index.md
