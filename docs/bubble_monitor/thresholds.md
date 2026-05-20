@@ -92,3 +92,31 @@
 > **指標規格說明**:詳見 GitHub repo 內 `追蹤.md` 文件。
 
 > **免責聲明**:本頁僅為個人研究參考,不構成任何投資建議。投資有風險,請自行評估並承擔風險。
+
+<script>
+// 觸發 plotly resize on Material content tab 切換 + 頁面 ready
+// (mobile Safari 對 hidden div 嚴格,切換前 plotly 拿不到 width 就 silent fail)
+(function() {
+  function resizeAllPlots() {
+    if (!window.Plotly) return;
+    document.querySelectorAll('.plotly-graph-div').forEach(function(div) {
+      if (div.offsetWidth > 0 && div.offsetHeight > 0) {
+        try { Plotly.Plots.resize(div); } catch(e) {}
+      }
+    });
+  }
+  // 初次 load + plotly.js load 完
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => setTimeout(resizeAllPlots, 200));
+  } else {
+    setTimeout(resizeAllPlots, 200);
+  }
+  // tab 切換
+  document.querySelectorAll('.tabbed-set input[type="radio"]').forEach(function(input) {
+    input.addEventListener('change', () => setTimeout(resizeAllPlots, 50));
+  });
+  // 視窗 resize / 方向變化
+  window.addEventListener('resize', () => setTimeout(resizeAllPlots, 100));
+  window.addEventListener('orientationchange', () => setTimeout(resizeAllPlots, 200));
+})();
+</script>
