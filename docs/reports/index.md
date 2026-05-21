@@ -12,6 +12,60 @@
 
 ---
 
+## 🔍 沒看到你想看的股票?申請生成
+
+<div id="ddmd-request-form" style="background: rgba(255,165,0,0.08); border-left: 4px solid #ff9800; padding: 1rem 1.2rem; border-radius: 4px; margin: 1rem 0;">
+  <p style="margin: 0 0 0.6rem 0;"><strong>📝 申請自動生成 DDMD 報告</strong>(免登入)</p>
+  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+    <input type="text" id="ddmd-symbol-input" placeholder="股票代號 例 2330" maxlength="6" style="padding: 0.4rem 0.6rem; border-radius: 4px; border: 1px solid #888; background: #1f1f1f; color: white; width: 12rem;" />
+    <button id="ddmd-submit-btn" onclick="submitDdmdRequest()" style="padding: 0.4rem 1.2rem; border-radius: 4px; border: none; background: #ff9800; color: white; font-weight: bold; cursor: pointer;">📝 送出申請</button>
+  </div>
+  <div id="ddmd-status" style="margin-top: 0.8rem; min-height: 1.2em;"></div>
+  <p style="font-size: 0.85rem; color: #aaa; margin: 0.8rem 0 0 0;">📋 <strong>限制</strong>:每小時全網最多 10 次申請 ・ 30 天內已生成過的股票直接給你既有報告 ・ 約 15 分鐘內完成</p>
+</div>
+
+<script>
+async function submitDdmdRequest() {
+  const input = document.getElementById('ddmd-symbol-input');
+  const btn = document.getElementById('ddmd-submit-btn');
+  const statusEl = document.getElementById('ddmd-status');
+  const symbol = input.value.trim();
+  if (!/^\d{4,6}$/.test(symbol)) {
+    statusEl.innerHTML = '<span style="color: #ef5350;">❌ 股票代號需 4-6 碼數字,例 2330</span>';
+    return;
+  }
+  btn.disabled = true; btn.textContent = '⏳ 送出中...';
+  statusEl.innerHTML = '<span style="color: #aaa;">⏳ 正在送出申請...</span>';
+  const WORKER_URL = 'https://ddmd-request.tom0801a.workers.dev/api/ddmd-request';
+  try {
+    const resp = await fetch(WORKER_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ symbol }) });
+    const data = await resp.json();
+    if (resp.status === 202) {
+      statusEl.innerHTML = `<span style="color: #66bb6a;">✅ ${data.message}</span><br><span style="color: #aaa; font-size: 0.85rem;">申請編號 #${data.request_id}・完成後會出現在下方清單中,可<a href="${data.reports_list_url}" style="color: #4fc3f7;">重新整理本頁</a>查看</span>`;
+      input.value = '';
+    } else if (resp.status === 200 && data.status === 'duplicate') {
+      statusEl.innerHTML = `<span style="color: #66bb6a;">✅ ${data.message}</span><br><a href="${data.existing_url}" style="color: #4fc3f7;">👉 看 ${symbol} 既有報告(${data.existing_date} 生成)</a>`;
+    } else if (resp.status === 429) {
+      statusEl.innerHTML = `<span style="color: #ef5350;">⛔ ${data.error}</span>`;
+    } else if (resp.status === 409) {
+      statusEl.innerHTML = `<span style="color: #ffb74d;">⏳ ${data.error}</span>`;
+    } else {
+      statusEl.innerHTML = `<span style="color: #ef5350;">❌ ${data.error || '送出失敗'}</span>`;
+    }
+  } catch (e) {
+    statusEl.innerHTML = `<span style="color: #ef5350;">❌ 網路錯誤: ${e.message}</span>`;
+  } finally {
+    btn.disabled = false; btn.textContent = '📝 送出申請';
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('ddmd-symbol-input');
+  if (input) input.addEventListener('keydown', e => { if (e.key === 'Enter') submitDdmdRequest(); });
+});
+</script>
+
+---
+
 ## ⏳ 資料鮮度說明
 
 DDMD 各章節時效性不同 — D 章估值最快過期、A 章商業模式變化最慢。我們把分析依「距今天數」分三級,**請依鮮度等級判斷可信範圍**:
