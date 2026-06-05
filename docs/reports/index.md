@@ -2,6 +2,10 @@
 .md-typeset table:not([class]) th,
 .md-typeset table:not([class]) td { white-space: nowrap; }
 .md-typeset table:not([class]) th { min-width: 4rem; }
+/* 長清單捲動:固定高度顯示約 10 列,其餘捲動;表頭 sticky */
+.ddmd-scroll { max-height: 30rem; overflow-y: auto; margin: 0.6rem 0; border: 1px solid rgba(128,128,128,0.25); border-radius: 4px; }
+.ddmd-scroll .md-typeset__table, .ddmd-scroll table { margin: 0; }
+.ddmd-scroll thead th { position: sticky; top: 0; z-index: 2; background: var(--md-default-bg-color); }
 </style>
 
 # 📁 個股 DDMD 分析清單
@@ -82,6 +86,8 @@ DDMD 各章節時效性不同 — D 章估值最快過期、A 章商業模式變
 
 ## 🏆 評分排名(現役)
 
+<div class="ddmd-scroll" markdown="1">
+
 | 排名 | 鮮度 | 代號 | 公司 | DDMD 評分 | 類型 | 連結 |
 |------|------|------|------|----------|------|------|
 | 🥇 | 🟢 | **2330** | 台積電 | **20/20** ★★★★★ | 頂級成長股 | [👉](2330_台積電_DDMD_2026-05-07.md) |
@@ -137,7 +143,11 @@ DDMD 各章節時效性不同 — D 章估值最快過期、A 章商業模式變
 | 51 | 🟢 | **2834** | 臺企銀 | **9/20** ★★☆☆☆ | 穩定低估值金融股 | [👉](2834_臺企銀_DDMD_2026-05-07.md) |
 | 52 | 🟢 | **3346** | 麗清 | **9/20** ★★☆☆☆ | 題材成長股(基本面偏弱) | [👉](3346_麗清_DDMD_2026-05-28.md) |
 
+</div>
+
 ## 📅 按日期排列(現役)
+
+<div class="ddmd-scroll" markdown="1">
 
 | 日期 | 鮮度 | 代號 | 公司 | 評分 | 連結 |
 |------|------|------|------|------|------|
@@ -193,6 +203,8 @@ DDMD 各章節時效性不同 — D 章估值最快過期、A 章商業模式變
 | 2026-05-05 | 🟢 | **3105** | 穩懋 | 15/20 | [👉](3105_穩懋_DDMD_2026-05-05.md) |
 | 2026-05-05 | 🟢 | **3289** | 宜特 | 15/20 | [👉](3289_宜特_DDMD_2026-05-05.md) |
 | 2026-05-05 | 🟢 | **3711** | 日月光投控 | 18/20 | [👉](3711_日月光投控_DDMD_2026-05-05.md) |
+
+</div>
 
 ## 📊 評分分佈(現役)
 
