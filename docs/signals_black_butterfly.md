@@ -23,6 +23,8 @@
 | **2458** | 義隆 | 🎯 黑飛舞觸發 | **1.50/4** | — |
 | **6446** | 藥華藥 | 🎯 黑飛舞觸發 | **1.00/4** | [17/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/6446_%E8%97%A5%E8%8F%AF%E8%97%A5_DDMD_2026-05-08/) |
 | **6196** | 帆宣 | 🎯 黑飛舞觸發 | **1.00/4** | — |
+| **2409** | 友達 | 🎯 黑飛舞觸發 | **1.75/4** | [8/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/2409_%E5%8F%8B%E9%81%94_DDMD_2026-06-05/) |
+| **8046** | 南電 | 🎯 黑飛舞觸發 | **2.50/4** | [18/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/8046_%E5%8D%97%E9%9B%BB_DDMD_2026-06-05/) |
 
 
 ---
