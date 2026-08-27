@@ -17,6 +17,7 @@
 |------|------|------|------|----------|
 | **2881** | 富邦金 | 🎯 黑飛舞觸發 | **1.50/4** | [14/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/2881_%E5%AF%8C%E9%82%A6%E9%87%91_DDMD_2026-06-05/) |
 | **6214** | 精誠 | 🎯 黑飛舞觸發 | **2.00/4** | — |
+| **2884** | 玉山金 | 🎯 黑飛舞觸發 | **1.25/4** | [12/20 →](https://shoppingliao.github.io/stock-analysis-public/reports/2884_%E7%8E%89%E5%B1%B1%E9%87%91_DDMD_2026-06-05/) |
 
 
 ---
